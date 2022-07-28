@@ -22,6 +22,8 @@ function App() {
     <div className="App">
       <CardPeople user={user} />
       <CardPeople user={user} />
+      <CardPeople user={user} />
+      <CardPeople user={user} />
 
     </div>
   )
