@@ -1,6 +1,20 @@
 import React from 'react'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
-const CardPeople = ({user}) => {
+const CardPeople = () => {
+
+    const [user, setUser] = useState()
+
+    useEffect(()=> {
+      const URL = 'https://randomuser.me/api/'
+      axios.get(URL)
+      .then(res => {setUser(res.data.results[0])}) //
+      .catch(err => console.log(err.message))
+  
+    }, [])
+
+    
   return (
       <div className="card">
           <div className="card__img">
