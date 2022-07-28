@@ -6,6 +6,8 @@ const CardPeople = () => {
 
     const [user, setUser] = useState()
 
+    console.log(user)
+
     useEffect(()=> {
       const URL = 'https://randomuser.me/api/'
       axios.get(URL)

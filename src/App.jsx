@@ -1,5 +1,6 @@
 import './App.css'
 import CardPeople from './components/CardPeople'
+import React from 'react'
 
 function App() {
 
