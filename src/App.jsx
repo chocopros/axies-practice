@@ -21,6 +21,9 @@ function App() {
   return (
     <div className="App">
       <CardPeople user={user} />
+      <CardPeople user={user} />
+      <CardPeople user={user} />
+      <CardPeople user={user} />
     </div>
   )
 }
